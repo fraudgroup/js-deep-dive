@@ -20,6 +20,9 @@ ECMAScript 사양에 등장하는 이중 대괄호로 감싼 이름들.
 
 [[Prototype]] 내부 슬롯의 경우, .\_\_proto\_\_를 통해 간접적으로 접근할 수 있다.
 
+> \_\_proto\_\_를 읽을 때 'dunder proto(던더 프로토)'라고 읽으면 됩니다. <br>
+> dunder는 'double underscore'의 줄임말.
+
 <br />
 
 ## 2. 프로퍼티 어트리뷰트와 프로퍼티 디스크립터 객체
@@ -72,7 +75,7 @@ console.log(Object.getOwnPropertyDescriptors(person));
 
 - **[[Value]]** 프로퍼티 어트리뷰트
   - 프로퍼티 디스크립터 객체의 프로퍼티 : value
-  - 프로퍼티 키를 통해 프로퍼티 값에 접근하면 반환되는 값 재할당
+  - 프로퍼티 키를 통해 프로퍼티 값을 변경하면 [[Value]]에 값을 재할당
   - 프로퍼티가 없다면 프로퍼티를 동적 생성하고 생성된 프로퍼티의 [[Value]]에 값 저장
 - **[[Writable]]** 프로퍼티 어트리뷰트
   - 프로퍼티 디스크립터 객체의 프로퍼티 : writable
@@ -145,6 +148,8 @@ console.log(descriptor);
 // {get: ƒ, set: ƒ, enumerable: true, configurable: true}
 ```
 
+<br>
+
 > 📜 **프로토타입(prototype)**
 >
 > 프로토타입은 어떤 객체의 상위(부모) 객체의 역할을 하는 객체
@@ -171,7 +176,7 @@ Object.defineProperties: 여러 개의 프로퍼티를 한 번에 정의
 
 |구분|메서드|프로퍼티 추가|프로퍼티 삭제|프로퍼티 값 읽기|프로퍼티 값 쓰기|프로퍼티 어트리뷰트 재정의|
 |:----------:|:-----------------------:|:--------:|:--------:|:--------:|:--------:|:---------:|
-|객체 확장 금지| Object.preventExtensions|X|O|X|O|O|
+|객체 확장 금지| Object.preventExtensions|X|O|O|O|O|
 |객체 밀봉|Object.seal|X|X|O|O|X|
 |객체 동결|Object.freeze|X|X|O|X|X|
 
