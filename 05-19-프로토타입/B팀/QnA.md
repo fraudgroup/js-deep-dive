@@ -60,6 +60,10 @@ me.hasOwnProperty("name");
 이 실행되는 과정을 프로토타입체인과 연관지어서 설명해주세요. <br>
 A:
 
+- me 객체에서 hasOwnProperty 메서드를 검색한다. 해당 메서드가 없으므로 프로토타입 체인을 따라 [[Prototype]]내부 슬롯에 바인딩되어 있는 프로토타입(Person.prototype)으로 이동하여 hasOwnProperty 메서드를 검색한다.
+- Person.prototype에도 hasOwnProperty 메서드가 없으므로 프로토타입 체인을 따라, [[Prototype]] 내부 슬롯에 바인딩되어 있는 프로토타입(Object.prototype)으로 이동하여 hasOwnProperty 메서드 검색한다.
+- Object.prototype에는 hasOwnProperty 메서드가 존재한다. 자바스크립트 엔진은 Object.prototype.hasOwnProperty 메서드를 호출한다. 이때 Object.prototype.hasOwnProperty 메서드의 this에는 me객체가 바인딩된다.
+
 Q: [민영] 함수 객체의 prototype 프로퍼티와 proto의 차이점은 무엇인가요? <br>
 A:
 
