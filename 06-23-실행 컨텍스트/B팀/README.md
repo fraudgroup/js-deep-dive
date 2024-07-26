@@ -26,7 +26,7 @@ x = 1;
 
 ## 23.2 실행 컨텍스트의 역할
 
-<img src = "https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/57694fd2-42d2-49e4-a737-c85e634c6ba3/Untitled.png">
+![예제](https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/57694fd2-42d2-49e4-a737-c85e634c6ba3/Untitled.png)
 
 1. 전역 코드 평가
    1. 전역 코드의 변수 선언문과 함수 선언문이 먼저 실행된다.
@@ -52,9 +52,9 @@ x = 1;
 - 실행 컨택스트의 코드 실행 순서는 스택 자료구조로 관리된다.
 - 실행 컨텍스트 스택의 최상위에 존재하는 실행 컨텍스트는 **언제나 현재 실행 중인 코드의 실행 컨텍스트**다.
 
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/91ad6e2d-e720-41ac-85da-d63c90784e37/Untitled.png">
+![예제](https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/91ad6e2d-e720-41ac-85da-d63c90784e37/Untitled.png)
 
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/33fada5d-397a-4b89-8c15-aa1fbf1c8a95/Untitled.png">
+![실행 컨텍스트 스택](https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/33fada5d-397a-4b89-8c15-aa1fbf1c8a95/Untitled.png)
 
 전역 코드 평가와 실행 → foo 함수 코드 평가와 실행(푸쉬) → bar 함수 코드의 평가와 실행(푸쉬) → (bar 함수 실행 컨텍스트를 팝) foo 함수 코드로 복귀 → 전역 코드로 복귀
 
@@ -68,7 +68,7 @@ x = 1;
 
 ## 23.6 실행 컨텍스트의 생성과 식별자 검색 과정
 
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/5445bb54-6a27-41ec-9795-d8f141b8dd8b/Untitled.png">
+![예제](https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/5445bb54-6a27-41ec-9795-d8f141b8dd8b/Untitled.png)
 
 1. 전역 객체 생성 → 전역 코드 평가 전 생성
 2. 전역 코드 평가
