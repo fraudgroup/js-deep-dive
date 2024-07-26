@@ -43,7 +43,6 @@
     - 참고: 15.toString(8) ⇒ 15를 8진수로 변환해 결과를 문자열로 반환
   - encodeURI: 완전한 URI를 문자열로 전달받아 이스케이프 처리를 위해 인코딩한다.
     - URI: 인터넷에 있는 자원을 나타내는 유일한 주소
-      <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d64605c5-b4b4-4a2c-b442-4d6a5729dec4/4b5000b6-6474-4127-a3dd-a9ee6589b65f/Untitled.png"/>
     - Scheme: 리소스에 접근하는 방법을 지정하는 프로토콜
     - 호스트: 리소스를 호스팅하는 서버의 도메인 이름 또는 IP 주소
     - 포트: 서버에 연결하기 위한 포트 번호 / 기본이 아닐 때만 지정
