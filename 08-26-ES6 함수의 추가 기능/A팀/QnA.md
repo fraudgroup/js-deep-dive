@@ -29,10 +29,10 @@ newObj.arrowFunction(); // (4)
 
 ### 답변
 
-(1) **42**: regularFunction은 객체 obj의 메서드로 호출되어서 this는 obj를 가리키고, obj.value는 42이다.
-(2) **undefined**: arrowFunction은 화살표 함수 → this는 상위 스코프 (전역 객체)를 참조한다. 여기에는 value 프로퍼티가 없어서 undefined가 출력된다.
-(3) **100**: newObj 에서 regularFunction을 호출할 때, this는 newObj를 가리키기 때문에 newObj.value는 100이다.
-(4) **undefined**: arrowFunction은 화살표 함수라서 여전히 상위 스코프(전역 객체)를 참조하여 value는 여전히 undefined이다.
+- (1) **42**: regularFunction은 객체 obj의 메서드로 호출되어서 this는 obj를 가리키고, obj.value는 42이다.
+- (2) **undefined**: arrowFunction은 화살표 함수 → this는 상위 스코프 (전역 객체)를 참조한다. 여기에는 value 프로퍼티가 없어서 undefined가 출력된다.
+- (3) **100**: newObj 에서 regularFunction을 호출할 때, this는 newObj를 가리키기 때문에 newObj.value는 100이다.
+- (4) **undefined**: arrowFunction은 화살표 함수라서 여전히 상위 스코프(전역 객체)를 참조하여 value는 여전히 undefined이다.
 
 <br />
 
@@ -48,15 +48,15 @@ newObj.arrowFunction(); // (4)
 
 ## 3. ES6의 일반 함수, 메서드, 화살표 함수가 지니는 특징을 보고 ❓를 ✅, ❌로 채워주세요.
 
-일반함수: constructor [❓], prototype[❓], super [❓], arguments[❓]
-메서드: constructor [❓], prototype[❓], super [❓], arguments[❓]
-화살표 함수: constructor [❓], prototype[❓], super [❓], arguments[❓]
+- 일반함수: constructor [❓], prototype[❓], super [❓], arguments[❓]
+- 메서드: constructor [❓], prototype[❓], super [❓], arguments[❓]
+- 화살표 함수: constructor [❓], prototype[❓], super [❓], arguments[❓]
 
 ### 답변
 
-일반 함수: constructor [✅], prototype[✅], super[❌], arguments[✅]
-메서드: constructor [❌], prototype[❌], super[✅], arguments[✅]
-화살표 함수: constructor [❌], prototype[❌], super[❌], arguments[❌]
+- 일반 함수: constructor [✅], prototype[✅], super[❌], arguments[✅]
+- 메서드: constructor [❌], prototype[❌], super[✅], arguments[✅]
+- 화살표 함수: constructor [❌], prototype[❌], super[❌], arguments[❌]
 
 <br />
 
@@ -90,9 +90,9 @@ person.sayHi(); // Hi Lee
 
 2. 렉시컬 환경의 구조
 
-- 각 렉시컬 환경은 두 가지 주요 컴포넌트로 구성됩니다:
-  1️⃣ 환경 레코드 (Environment Record): 현재 스코프의 변수, 함수 선언 등을 저장합니다.
-  2️⃣ 외부 렉시컬 환경 참조 (Outer Lexical Environment Reference): 상위 렉시컬 환경에 대한 참조를 가집니다.
+- 각 렉시컬 환경은 두 가지 주요 컴포넌트로 구성됩니다
+- 1️⃣ 환경 레코드 (Environment Record): 현재 스코프의 변수, 함수 선언 등을 저장합니다.
+- 2️⃣ 외부 렉시컬 환경 참조 (Outer Lexical Environment Reference): 상위 렉시컬 환경에 대한 참조를 가집니다.
 
 3. 화살표 함수 호출 시점
 
